@@ -72,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
         }
         newValue = newValue>maxValue ? maxValue : newValue;
         newValue = newValue<minValue ? minValue : newValue;
+        //Soluzione esercizio 3
+        if(newValue==maxValue){
+            newValue = minValue;
+        }
         this.modelValue=newValue;
         input.setText(""+this.modelValue);
     }
