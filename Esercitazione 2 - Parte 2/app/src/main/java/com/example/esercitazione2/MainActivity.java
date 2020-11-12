@@ -91,19 +91,18 @@ public class MainActivity extends AppCompatActivity {
     //true se è andato a buon fine, false altrimenti
     public boolean checkInput(){
         int errors =0;
-        if(nome.getText() == null || nome.getText().length() ==0){
+        if(nome.getText().toString().length() ==0){
             errors++;
             nome.setError("Inserire il nome");
         }
         else nome.setError(null);
-
-        if(cognome.getText() == null || cognome.getText().length() ==0){
+        if(cognome.getText().toString().length() ==0){
             errors++;
             cognome.setError("Inserire il cognome");
         }
         else cognome.setError(null);
 
-        if(data.getText() == null || data.getText().length() ==0){
+        if(data.getText().toString().length() ==0){
             errors++;
             data.setError("Inserire la data");
         }
