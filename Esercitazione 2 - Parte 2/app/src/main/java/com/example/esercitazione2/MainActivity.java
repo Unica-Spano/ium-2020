@@ -5,6 +5,7 @@ import androidx.fragment.app.DialogFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -91,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     //true se è andato a buon fine, false altrimenti
     public boolean checkInput(){
         int errors =0;
-        if(nome.getText().toString().length() ==0){
+        if(nome.getText() .toString().length() ==0){
             errors++;
             nome.setError("Inserire il nome");
         }
